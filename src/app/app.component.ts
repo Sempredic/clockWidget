@@ -13,6 +13,7 @@ export class AppComponent {
   minutes:any;
   seconds:any;
   currentLocale: any;
+  message:string;
 
   isTwelveHrFormat:false;
   test:any;
@@ -28,5 +29,10 @@ export class AppComponent {
    const currentDate = new Date();
    this.date = currentDate.toLocaleTimeString();
     }, 1000);
+    this.message="";
+  }
+
+  changeColor(){
+    this.message = 'Yup';
   }
 }
